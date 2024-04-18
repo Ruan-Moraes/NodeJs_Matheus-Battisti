@@ -56,58 +56,62 @@ function init() {
         description: 'Sair do programa.',
       },
     ],
-  }).then((answer) => {
-    if (answer === 'createAccount') {
-      console.log(chalk.white.bgGreen('Criar Conta'));
+  })
+    .then((answer) => {
+      if (answer === 'createAccount') {
+        console.log(chalk.white.bgGreen('Criar Conta'));
 
-      createAccount();
-    }
+        createAccount();
+      }
 
-    if (answer === 'balance') {
-      console.log(chalk.white.bgGreen('Ver Saldo'));
+      if (answer === 'balance') {
+        console.log(chalk.white.bgGreen('Ver Saldo'));
 
-      balance();
-    }
+        balance();
+      }
 
-    if (answer === 'deposit') {
-      console.log(chalk.white.bgGreen('Depositar um valor em uma conta'));
+      if (answer === 'deposit') {
+        console.log(chalk.white.bgGreen('Depositar um valor em uma conta'));
 
-      deposit();
-    }
+        deposit();
+      }
 
-    if (answer === 'withdraw') {
-      console.log(chalk.white.bgGreen('Sacar um valor de uma conta'));
+      if (answer === 'withdraw') {
+        console.log(chalk.white.bgGreen('Sacar um valor de uma conta'));
 
-      withdraw();
-    }
+        withdraw();
+      }
 
-    if (answer === 'transfer') {
-      console.log(
-        chalk.white.bgGreen('Transferir um valor de uma conta para outra')
-      );
+      if (answer === 'transfer') {
+        console.log(
+          chalk.white.bgGreen('Transferir um valor de uma conta para outra')
+        );
 
-      transfer();
-    }
+        transfer();
+      }
 
-    if (answer === 'deleteAccount') {
-      console.log(chalk.white.bgGreen('Deletar Conta'));
+      if (answer === 'deleteAccount') {
+        console.log(chalk.white.bgGreen('Deletar Conta'));
 
-      deleteAccount();
-    }
+        deleteAccount();
+      }
 
-    if (answer === 'clear') {
-      console.clear();
+      if (answer === 'clear') {
+        console.clear();
 
-      init();
-    }
+        init();
+      }
 
-    if (answer === 'exit') {
-      console.log(chalk.white.bgBlue('Obrigado por usar o nosso Banco!'));
-      console.clear();
+      if (answer === 'exit') {
+        console.log(chalk.white.bgBlue('Obrigado por usar o nosso Banco!'));
+        console.clear();
 
-      process.exit();
-    }
-  });
+        process.exit();
+      }
+    })
+    .catch((err) => {
+      console.log(chalk.white.bgRed(err));
+    });
 }
 
 function createAccount() {
