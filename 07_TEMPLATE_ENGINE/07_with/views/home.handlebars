@@ -1,0 +1,15 @@
+<h1>Olá {{user.name}} e você tem {{user.age}} anos!</h1>
+{{#if approved}}
+  <p>Seu cadastro foi aprovado!</p>
+{{else}}
+  <p>Seu cadastro está pendente de aprovação.</p>
+{{/if}}
+<p>Algum texto do site</p>
+<p>{{palavra}}</p>
+{{#if auth}}
+  <p>
+    você está logado, clique
+    <a href='/dashboard'>aqui</a>
+    para entrar no dashboard
+  </p>
+{{/if}}
