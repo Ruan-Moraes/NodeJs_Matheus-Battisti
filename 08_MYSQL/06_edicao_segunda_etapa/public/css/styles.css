@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 32rem;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-control label {
+  font-weight: bold;
+}
+
+.form-control input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+form input[type='submit'] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 32rem;
+  margin: 0 auto;
+}
+
+.book a {
+  text-decoration: none;
+  color: #333;
+}
+
+.book a:hover {
+  text-decoration: underline;
+}
+
+#book-page {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 32rem;
+  margin: 0 auto;
+}
+
+#book-page p:nth-child(2) {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#book-page p:nth-child(3) {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#book-page .edit {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#book-page .edit a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+}
+
+#book-page .edit a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #ccc;
+  padding: 1rem;
+}
+
+footer h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 0.75rem;
+  width: 80%;
+  margin: 0 auto;
+}
